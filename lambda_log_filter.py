@@ -31,3 +31,4 @@ def lambda_handler(event, context):
         s3_client.upload_file(upload_path,
              '{}-filtered'.format(bucket),
              'filtered-{}'.format(key))
+        
