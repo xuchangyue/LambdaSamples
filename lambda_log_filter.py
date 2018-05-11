@@ -1,8 +1,7 @@
 import re
 import boto3
-# Trigger for this function is When S3 object is created
-internalIp = ['xxx.xxx.xxx.xxx']
 
+internalIp = ['54.222.11.143']
 s3_client = boto3.client('s3')
 
 def logfilter(file_path, filtered_path):
@@ -31,4 +30,3 @@ def lambda_handler(event, context):
         s3_client.upload_file(upload_path,
              '{}-filtered'.format(bucket),
              'filtered-{}'.format(key))
-        
