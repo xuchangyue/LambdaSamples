@@ -1,6 +1,6 @@
 import re
 import boto3
-
+# Trigger for this function is When S3 object is created
 internalIp = ['xxx.xxx.xxx.xxx']
 
 s3_client = boto3.client('s3')
