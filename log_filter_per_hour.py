@@ -1,8 +1,8 @@
 import re
 import boto3
+# Trigger for this function is CloudWatch Scheduled Events
 
-
-internalIp = ['54.222.11.143']
+internalIp = ['xxx.xxx.xxx.xxx']
 new_log_bucket_name = 'fakelogs'
 all_log_bucket_name = 'allfakelogs'
 filtered_log_bucket_name = 'fakelogs-filtered'
