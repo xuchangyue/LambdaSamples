@@ -1,7 +1,7 @@
 import re
 import boto3
 
-internalIp = ['54.222.11.143']
+internalIp = ['xxx.xxx.xxx.xxx']
 s3_client = boto3.client('s3')
 
 def logfilter(file_path, filtered_path):
